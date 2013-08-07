@@ -1,0 +1,351 @@
+@import "base"
+* 
+	margin: 0
+	padding: 0 
+	//-webkit-text-size-adjust: none
+html, body 
+	height: 100%
+body
+	background: url(../img/bg.jpg) 
+	font-family: Tahoma, Arial, sans-serif
+	font-weight: normal 
+	font-size: 12px
+	line-height: 1.2
+	color: #3c3c3c 
+	//-webkit-transform: translate3d(0,0,0);
+	//-weblit-backface-visibility: hidden;
+// resets
+a img, fieldset 
+	border: none
+a
+	color: #000
+	text-decoration: none
+p
+	line-height: 1.2
+li 
+	list-style: none
+textarea, button, select, input
+	border: none
+	outline: none
+	font-family: Tahoma, Arial, sans-serif
+button 
+	line-height: 1
+	cursor: pointer
+	&::-moz-focus-inner
+		padding: 0
+		border: 0
+table 
+	border-spacing: 0
+	border-collapse: collapse
+// common styles
+.wrap
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin: 0 auto -225px
+.wrap__in
+	position: relative
+	width: 1020px
+	margin: 0 auto
+	background: #FFF 
+.push
+	height: 225px
+	clear: both
+.title
+	margin-bottom: 15px
+	a
+		position: relative
+		padding-right: 17px
+		+font
+		font-size: 18px
+		&:after
+			content: ""
+			position: absolute
+			top: 6px
+			right: 0
+			+s(title-arr)
+//top
+.top
+	background: #3c3c3c 
+.top__in
+	width: 1020px
+	height: 46px
+	margin: 0 auto
+.enter
+	float: left
+	margin: 15px 0 0 8px
+	a
+		float: left
+		padding: 0 15px 3px
+		color: #FFF 
+		&:hover
+			color: $yl 
+		&:first-child
+			border-right: 2px solid #4c4c4c 
+.language
+	float: right
+	margin: 15px 17px 0 35px
+	a, span
+		float: left
+		margin: 0 2px
+		padding: 1px 4px 4px 
+		color: #fff 
+	a			
+		&:hover
+			color: $yl
+	span
+		background: $yl
+		border-radius: 9px
+		color: #2d2d2d 
+.player
+	float: right
+	margin-top: 10px
+	button
+		float: left
+.player__prev
+	+s(pl-prev)
+.player__next
+	margin-right: 7px
+	+s(pl-next)
+.player__pause
+	+s(pl-pause)
+.player__mute	
+	margin-left: 5px
+	+s(pl-mute)
+.player__song
+	position: relative
+	float: left
+	width: 240px
+	height: 23px
+	margin-top: 2px
+	border: 1px solid #000
+	line-height: 23px
+	background: #2d2d2d 
+	box-shadow: 0 0 0 1px #272727, 0 0 0 2px #414141
+	font-size: 12px
+	color: #fff 
+	overflow: hidden
+.player__pic
+	float: left
+	img
+		display: block
+.player__info	
+	position: relative
+	overflow: hidden
+	span, strong
+		position: relative
+		z-index: 2 
+	span
+		float: right
+		margin-right: 7px
+	strong
+		display: block
+		padding: 0 7px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		font-weight: normal
+	i
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		background: #565656
+//header
+.header
+	position: relative
+	height: 110px
+	padding: 0 20px
+	border-bottom: 1px solid #f7f7f7
+	box-shadow: 0 -1px 0 0 #d7d7d7 inset
+	background: #f5f5f5 
+.nav
+	float: left
+	margin-top: 49px
+	a
+		float: left
+		padding: 0 10px
+		border-left: 2px solid #dbdbdb
+		+font
+		color: #2d2d2d
+		text-transform: uppercase
+		font-size: 16px 
+		&:first-child
+			padding: 0 10px 0 0
+			border: none 
+		&:hover, &.is-active
+			color: $yl 
+.logo
+	position: absolute
+	top: 17px
+	left: 50%
+	margin-left: -106px
+	+s(logo)
+	+ht
+.search-form
+	float: right
+	margin-top: 51px
+	height: 24px
+	border-radius: 5px
+	background: #FFF  
+	box-shadow: 0 -1px 0 1px #e0e0e0
+	input, button
+		float: left
+	input
+		width: 135px
+		height: 24px
+		padding-left: 15px
+		background: none
+		font-size: 12px
+		+ph(#000)
+	button
+		+s(search)
+		&:hover
+			opacity: .7 
+//menu
+.menu
+	position: relative
+	padding: 35px 0
+	margin: 0 -18px
+	background: #ebebeb 
+	box-shadow: 0 8px 3px -3px rgba(0,0,0,.1), 0 14px 1px -7px #f5f5f5
+	text-align: center
+	font-size: 0
+	&:before, &:after
+		content: ""
+		position: absolute
+		bottom: -18px
+		width: 0px
+		height: 0px
+		border-style: solid
+	&:before
+		left: 0
+		border-width: 0 18px 18px 0
+		border-color: transparent $yl transparent transparent
+	&:after
+		right: 0
+		border-width: 18px 18px 0 0
+		border-color: $yl transparent transparent transparent
+	a
+		position: relative
+		display: inline-block
+		width: 240px
+		padding-top: 100px
+		border-left: 1px solid #bcbcbc 
+		+font
+		font-size: 26px
+		color: #3c3c3c
+		text-transform: uppercase  
+		&:first-child
+			border: none
+		&:hover
+			color: $yl 
+		i
+			position: absolute
+			top: 5px
+			left: 50%
+			margin-left: -38px
+			border-radius: 50%
+.menu__item-1  
+	i
+		+s(menu1)
+		background-color: #fff
+	&:hover
+		i
+			+s(menu1-h)
+			background-color: #fff
+.menu__item-2
+	i
+		+s(menu2)
+		background-color: #fff
+	&:hover
+		i
+			+s(menu2-h)
+			background-color: #fff
+.menu__item-3
+	i
+		+s(menu3)
+		background-color: #fff
+	&:hover
+		i
+			+s(menu3-h)
+			background-color: #fff
+.menu__item-4
+	i
+		+s(menu4)
+		background-color: #fff
+	&:hover
+		i
+			+s(menu4-h)
+			background-color: #fff
+//item
+.item-wrap
+	margin: 0 -30px -40px 0
+	font-size: 0
+.item
+	display: inline-block
+	width: 170px
+	margin: 0 20px 40px 0
+	vertical-align: top
+	font-size: 12px
+.item_big, .item_big
+	width: 360px 
+.item__date
+	margin-bottom: 5px
+.item__pic
+	position: relative
+	display: block
+	margin-bottom: 5px
+	text-align: center
+	img
+		display: block
+.item__title
+	position: absolute
+	left: 10px
+	right: 10px
+	bottom: 20px
+	font-size: 30px
+	font-style: italic
+	&.is-white	
+		color: #FFF
+		text-shadow: 0 0 3px #000
+	&.is-black
+		color: #000 
+		text-shadow: 0 0 3px #fff
+.item__new
+	position: absolute
+	top: 12px
+	left: 12px 
+	width: 146px
+	height: 146px	 
+	background: rgba(255,200,0,.85) 
+	border-radius: 50%
+	+rotate(-20deg)
+	line-height: 146px	
+	font-weight: bold 
+	font-size: 24px 
+	color: #fff 
+	text-transform: uppercase
+	span
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
+.item__desc
+	margin: 7px 0 5px
+.item__meta
+	float: right	
+.item__share, .item__comm
+	float: left	
+	font-size: 11px
+	line-height: 15px	
+	color: #aaa
+	i
+		float: left
+		margin-right: 2px
+.item__share
+	margin-right: 10px
+	i
+		+s(share)
+.item__comm
+	i
+		+s(comm)
