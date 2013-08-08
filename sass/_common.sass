@@ -5,15 +5,17 @@
 	//-webkit-text-size-adjust: none
 html, body 
 	height: 100%
-body
+html
 	background: url(../img/bg.jpg) 
+body
+	background: url(../img/bg-pic.jpg) no-repeat 54% 340px
 	font-family: Tahoma, Arial, sans-serif
 	font-weight: normal 
 	font-size: 12px
 	line-height: 1.2
 	color: #3c3c3c 
-	//-webkit-transform: translate3d(0,0,0);
-	//-weblit-backface-visibility: hidden;
+	//-webkit-transform: translate3d(0,0,0)
+	//-weblit-backface-visibility: hidden
 // resets
 a img, fieldset 
 	border: none
@@ -39,19 +41,19 @@ table
 	border-collapse: collapse
 // common styles
 .wrap
-	min-height: 100%
-	height: auto !important
-	height: 100%
-	margin: 0 auto -225px
-.wrap__in
 	position: relative
 	width: 1020px
 	margin: 0 auto
-	background: #FFF 
-.push
-	height: 225px
-	clear: both
+	background: #FFF
 .title
+	+font	
+	font-size: 43px
+	text-transform: uppercase
+	color: $yl
+.title-less
+	+font
+	font-size: 21px 
+.link-all
 	margin-bottom: 15px
 	a
 		position: relative
@@ -64,6 +66,10 @@ table
 			top: 6px
 			right: 0
 			+s(title-arr)
+		&:hover
+			color: $yl
+			&:after
+				+s(title-arr-h)
 //top
 .top
 	background: #3c3c3c 
@@ -278,6 +284,110 @@ table
 		i
 			+s(menu4-h)
 			background-color: #fff
+//footer
+.footer
+	padding: 10px 35px
+	background: #3c3c3c 
+	+clr	
+.footer__logo
+	padding: 20px 0
+	overflow: hidden
+	a
+		float: left
+		+s(logo-s)
+.footer__in
+	float: left
+	width: 720px 
+.footer__social
+	float: right
+	width: 194px
+	padding-left: 17px
+	border-left: 2px solid #4b4a4a
+.footer__fb
+	padding-bottom: 6px
+	margin-bottom: 6px
+	border-bottom: 1px solid #4b4a4a 
+.footer__info
+	+clr
+.footer__detail
+	float: left
+	width: 470px
+	margin-right: 45px
+.footer__about
+	margin-bottom: 25px
+	color: #FFF
+	font-size: 11px 
+.footer__contacts
+	+clr
+	a, span
+		position: relative
+		float: left
+		padding-left: 28px
+		margin-right: 25px
+		color: #FFF 
+		i
+			position: absolute
+			top: -3px
+			left: 0
+	a
+		&:hover
+			color: $yl 
+.footer__skype
+	i
+		+s(skype)
+	&:hover
+		i
+			+s(skype-h)
+.footer__mail
+	i
+		+s(mail)
+	&:hover
+		i
+			+s(mail-h)
+.footer__phone
+	i
+		+s(phone)
+.footer__links
+	float: left
+.footer__nav, .footer__menu
+	float: left
+	li
+		margin-bottom: 12px
+	a
+		text-transform: uppercase
+		color: #FFF 
+		&:hover
+			color: $yl 
+.footer__nav
+	margin-right: 30px
+.footer__menu
+	a
+		position: relative
+		padding-right: 17px 
+		&:after
+			content: ""
+			position: absolute
+			top: 4px
+			right: 0
+			+s(nav-arr)
+		&:hover
+			&:after
+				+s(nav-arr-h)
+.copyright
+	position: relative
+	width: 1020px
+	margin: 0 auto
+	padding: 15px 0 30px
+	text-align: center
+	color: #919292
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 2px
+		background: url(../img/icons/footer-bg.png) repeat-x  
 //item
 .item-wrap
 	margin: 0 -30px -40px 0
@@ -288,6 +398,8 @@ table
 	margin: 0 20px 40px 0
 	vertical-align: top
 	font-size: 12px
+	.meta
+		float: right
 .item_big, .item_big
 	width: 360px 
 .item__date
@@ -299,6 +411,9 @@ table
 	text-align: center
 	img
 		display: block
+	&:hover
+		img
+			opacity: .7
 .item__title
 	position: absolute
 	left: 10px
@@ -332,20 +447,105 @@ table
 		line-height: 1
 .item__desc
 	margin: 7px 0 5px
-.item__meta
-	float: right	
-.item__share, .item__comm
+.meta
+	+clr	
+.meta__share, .meta__comm, .meta__go
 	float: left	
+	margin-left: 10px
 	font-size: 11px
 	line-height: 15px	
 	color: #aaa
 	i
 		float: left
 		margin-right: 2px
-.item__share
-	margin-right: 10px
+a
+	&.meta__share, &.meta__comm, &.meta__go
+		&:hover
+			text-decoration: underline
+.meta__share
+	margin-left: 0
 	i
 		+s(share)
-.item__comm
+.meta__comm
+
 	i
 		+s(comm)
+.meta__go
+	i
+		+s(go)
+//pager
+.pager
+	position: absolute
+	left: 0
+	right: 0
+	text-align: center
+	font-size: 0
+	z-index: 200 
+	span
+		position: relative
+		display: inline-block
+		width: 10px
+		height: 10px
+		margin: 0 5px
+		background: #d3d3d3
+		border-radius: 50% 
+		box-shadow: 0 2px 3px rgba(0,0,0,.4) inset, 0 1px 2px #fff
+		cursor: pointer
+		&.cycle-pager-active
+			&:after
+				content: ""
+				position: absolute
+				top: 2px
+				left: 2px
+				right: 2px
+				bottom: 2px
+				border-radius: 50%
+				background: #ffcb0c
+				+background-image(linear-gradient(#ffcb0c, #fdd12e)) 
+//pagination
+.pagination
+	text-align: center
+	font-size: 0
+	a, span
+		display: inline-block
+		margin: 0 5px
+		padding: 0 5px
+		vertical-align: top
+		font-size: 14px		
+	a
+		&:hover
+			text-decoration: underline 	
+	span
+		color: $yl
+		font-weight: bold	
+//btn
+.btn
+	height: 25px
+	padding: 0 15px
+	border: 1px solid #e6b400
+	border-radius: 3px
+	background-color: #a9a9a9
+	+background-image(linear-gradient(bottom, #d78207, #ffc700))
+	font-size: 14px
+	font-weight: bold
+	color: #FFF
+	&:hover
+		+background-image(linear-gradient(bottom, #d78207 30%, #ffc700))
+	&:active
+		background: #d78207
+//label
+.label
+	span 
+		display: block
+		height: 23px
+		line-height: 23px
+		color: #acacac 
+	input
+		padding: 0 5px
+		height: 23px
+		border: 1px solid #d7d7d7
+	textarea
+		padding: 3px 5px
+		border: 1px solid #d7d7d7
+.fieldset
+	+clr	

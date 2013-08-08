@@ -11,574 +11,618 @@
 	<script src="js/common.js"></script>
 </head>
 <body>
+<!-- BEGIN .top -->
+<div class="top">
+	<div class="top__in">
+		<div class="enter">
+			<a href="#">Вход</a>
+			<a href="#">Регистрация</a>
+		</div>
+		<div class="language">
+			<span>ru</span>
+			<a href="#">eng</a>
+		</div>
+		<div class="player">
+			<button class="player__prev"></button>
+			<button class="player__pause"></button>
+			<button class="player__next"></button>
+			<div class="player__song">
+				<div class="player__pic">
+					<img src="img/pic1.jpg" alt="">		
+				</div>
+				<div class="player__info">
+					<span>03:45</span>
+					<strong>Checkpoint - Love love love love love</strong>
+					<i style="width: 20%"></i>
+				</div>					
+			</div>
+			<button class="player__mute"></button>				
+		</div>
+	</div>		
+</div>
+<!-- END .top -->	
 <!-- BEGIN .wrap -->
-<section class="wrap">
-	<!-- BEGIN .top -->
-	<div class="top">
-		<div class="top__in">
-			<div class="enter">
-				<a href="#">Вход</a>
-				<a href="#">Регистрация</a>
-			</div>
-			<div class="language">
-				<span>ru</span>
-				<a href="#">eng</a>
-			</div>
-			<div class="player">
-				<button class="player__prev"></button>
-				<button class="player__pause"></button>
-				<button class="player__next"></button>
-				<div class="player__song">
-					<div class="player__pic">
-						<img src="img/pic1.jpg" alt="">		
-					</div>
-					<div class="player__info">
-						<span>03:45</span>
-						<strong>Checkpoint - Love love love love love</strong>
-						<i style="width: 20%"></i>
-					</div>					
+<div class="wrap">
+	<!-- BEGIN .header -->
+	<header class="header">
+		<nav class="nav">
+			<a class="is-active" href="#">ГЛАВНАЯ</a>
+			<a href="#">О НАС</a>
+			<a href="#">новости</a>
+			<a href="#">FAQ</a>
+			<a href="#">контакты</a>
+		</nav>
+		<a class="logo" href="#">Artist.ua</a>
+		<div class="search-form">
+			<input type="text" placeholder="Поиск...">
+			<button></button>
+		</div>
+	</header>
+	<!-- END .header -->
+	<!-- BEGIN .m-slider -->
+	<div class="m-slider">
+		<button class="m-slider__prev"></button>
+		<button class="m-slider__next"></button>
+		<div class="pager"></div>
+		<div class="m-slider__items cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" data-cycle-slides=".m-slider__el" data-cycle-pager=".m-slider .pager" data-cycle-prev=".m-slider__prev" data-cycle-next=".m-slider__next">
+			<div class="m-slider__el">
+				<img src="img/pic2.jpg" alt="">
+				<div class="m-slider__text">
+					<div class="m-slider__title">удобный букинг<span>заказывайте артистов на artist.ua</span></div>							
+					<p>Букинг-агентство Artist.ua – это легкий и удобный способ пригласить артиста к Вам на праздник. На нашем портале регистрируются разножанровые артисты, танцоры, фотографы, художники. Ознакомится с их портфолио, и с помощью таймлайна, который ведет Артист, узнать его занятость на нужную дату мгновенно!</p>
 				</div>
-				<button class="player__mute"></button>				
 			</div>
-		</div>		
+			<div class="m-slider__el">
+				<img src="img/pic2.jpg" alt="">
+				<div class="m-slider__text">
+					<div class="m-slider__title">бубубукинг<span>заказывайте артистов на artist.ua</span></div>							
+					<p>Букинг-агентство Artist.ua – это легкий и удобный способ пригласить артиста к Вам на праздник. На нашем портале регистрируются разножанровые артисты, танцоры, фотографы, художники. Ознакомится с их портфолио, и с помощью таймлайна, который ведет Артист, узнать его занятость на нужную дату мгновенно!</p>
+				</div>
+			</div>
+			<div class="m-slider__el">
+				<img src="img/pic2.jpg" alt="">
+				<div class="m-slider__text">
+					<div class="m-slider__title">удобный букинг<span>заказывайте артистов на artist.ua</span></div>							
+					<p>Букинг-агентство Artist.ua – это легкий и удобный способ пригласить артиста к Вам на праздник. На нашем портале регистрируются разножанровые артисты, танцоры, фотографы, художники. Ознакомится с их портфолио, и с помощью таймлайна, который ведет Артист, узнать его занятость на нужную дату мгновенно!</p>
+				</div>
+			</div>
+			<div class="m-slider__el">
+				<img src="img/pic2.jpg" alt="">
+				<div class="m-slider__text">
+					<div class="m-slider__title">бубубукинг<span>заказывайте артистов на artist.ua</span></div>							
+					<p>Букинг-агентство Artist.ua – это легкий и удобный способ пригласить артиста к Вам на праздник. На нашем портале регистрируются разножанровые артисты, танцоры, фотографы, художники. Ознакомится с их портфолио, и с помощью таймлайна, который ведет Артист, узнать его занятость на нужную дату мгновенно!</p>
+				</div>
+			</div>
+		</div>			
 	</div>
-	<!-- END .top -->
-	<div class="wrap__in">
-		<!-- BEGIN .header -->
-		<div class="header">
-			<nav class="nav">
-				<a class="is-active" href="#">ГЛАВНАЯ</a>
-				<a href="#">О НАС</a>
-				<a href="#">новости</a>
-				<a href="#">FAQ</a>
-				<a href="#">контакты</a>
-			</nav>
-			<a class="logo" href="#">Artist.ua</a>
-			<div class="search-form">
-				<input type="text" placeholder="Поиск...">
-				<button></button>
+	<!-- END .m-slider -->
+	<!-- BEGIN .menu -->
+	<div class="menu">
+		<a class="menu__item-1" href="#">букинг<i></i></a>
+		<a class="menu__item-2" href="#">музыка<i></i></a>
+		<a class="menu__item-3" href="#">сервисы<i></i></a>
+		<a class="menu__item-4" href="#">фанзона<i></i></a>
+	</div>
+	<!-- END .menu -->
+	<div class="m-news">
+		<div class="link-all">
+			<a href="#">Все новости</a>
+		</div>
+		<!-- BEGIN .item-wrap -->
+		<div class="item-wrap">
+			<div class="item item_big">
+				<div class="item__date">10 августа ‘12</div>
+				<a class="item__pic" href="#">
+					<img src="img/pic3.jpg" alt="">
+					<span class="item__title is-white">LOREM IPSUM</span>
+				</a>	
+				<div class="meta">
+					<span class="meta__share"><i></i></span>
+					<a class="meta__comm" href="#"><i></i>2</a>
+				</div>					
+			</div>
+			<div class="item">
+				<div class="item__date">10 августа ‘12</div>
+				<a class="item__pic" href="#">
+					<img src="img/pic4.jpg" alt="">
+				</a>
+				<div class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate laoreet orci, sed cursus velit iaculis a. Pellentesque habitant morbi tristique senectus et.</div>
+				<div class="meta">
+					<span class="meta__share"><i></i>3</span>
+					<a class="meta__comm" href="#"><i></i>2</a>
+				</div>		
+			</div>
+			<div class="item">
+				<div class="item__date">10 августа ‘12</div>
+				<a class="item__pic" href="#">
+					<img src="img/pic5.jpg" alt="">
+					<span class="item__new"><span>новый конкурс!</span></span>
+				</a>
+				<div class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate laoreet orci, sed.</div>
+				<div class="meta">
+					<span class="meta__share"><i></i>3</span>
+					<a class="meta__comm" href="#"><i></i>2</a>
+				</div>		
+			</div>
+			<div class="item">
+				<div class="item__date">10 августа ‘12</div>
+				<a class="item__pic" href="#">
+					<img src="img/pic6.jpg" alt="">
+				</a>
+				<div class="meta">
+					<span class="meta__share"><i></i>3</span>
+					<a class="meta__comm" href="#"><i></i>2</a>
+				</div>		
+			</div>
+			<div class="item">
+				<div class="item__date">10 августа ‘12</div>
+				<a class="item__pic" href="#">
+					<img src="img/pic4.jpg" alt="">
+				</a>
+				<div class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate laoreet orci, sed cursus velit iaculis a. Pellentesque habitant morbi tristique senectus et.</div>
+				<div class="meta">
+					<span class="meta__share"><i></i>3</span>
+					<a class="meta__comm" href="#"><i></i>2</a>
+				</div>		
+			</div>
+			<div class="item">
+				<div class="item__date">10 августа ‘12</div>
+				<a class="item__pic" href="#">
+					<img src="img/pic5.jpg" alt="">
+					<span class="item__new"><span>новый конкурс!</span></span>
+				</a>
+				<div class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate laoreet orci, sed.</div>
+				<div class="meta">
+					<span class="meta__share"><i></i>3</span>
+					<a class="meta__comm" href="#"><i></i>2</a>
+				</div>		
+			</div>
+			<div class="item item_big">
+				<div class="item__date">10 августа ‘12</div>
+				<a class="item__pic" href="#">
+					<img src="img/pic3.jpg" alt="">
+					<span class="item__title is-black">LOREM IPSUM</span>
+				</a>	
+				<div class="meta">
+					<span class="meta__share"><i></i></span>
+					<a class="meta__comm" href="#"><i></i>2</a>
+				</div>					
+			</div>
+			<div class="item">
+				<div class="item__date">10 августа ‘12</div>
+				<a class="item__pic" href="#">
+					<img src="img/pic6.jpg" alt="">
+					<span class="item__title is-white">LOREM IPSUM</span>
+				</a>
+				<div class="meta">
+					<span class="meta__share"><i></i>3</span>
+					<a class="meta__comm" href="#"><i></i>2</a>
+				</div>		
 			</div>
 		</div>
-		<!-- END .header -->
-		<!-- BEGIN .m-slider -->
-		<div class="m-slider">
-			<button class="m-slider__prev"></button>
-			<button class="m-slider__next"></button>
-			<div class="m-slider__pager"></div>
-			<div class="m-slider__items cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" data-cycle-slides="> div" data-cycle-pager=".m-slider__pager" data-cycle-prev=".m-slider__prev" data-cycle-next=".m-slider__next" data-allow-wrap="true" data-cycle-visible="1">
-				<div class="m-slider__el">
-					<img src="img/pic2.jpg" alt="">
-					<div class="m-slider__text">
-						<div class="m-slider__title">удобный букинг<span>заказывайте артистов на artist.ua</span></div>							
-						<p>Букинг-агентство Artist.ua – это легкий и удобный способ пригласить артиста к Вам на праздник. На нашем портале регистрируются разножанровые артисты, танцоры, фотографы, художники. Ознакомится с их портфолио, и с помощью таймлайна, который ведет Артист, узнать его занятость на нужную дату мгновенно!</p>
+		<!-- END .item-wrap -->
+	</div>
+	<div class="m-category">			
+		<div class="m-artist">
+			<div class="link-all">
+				<a href="#">Звезды</a>
+			</div>
+			<div class="m-artist__desc">
+				<p>В этом разделе можно выбрать и заказать на мероприятие  выступление Артистов, которые уже завоевали любовь и признание тысячей  и носят гордый статус Звезд.  Проведение мероприятий с участием таких Артистов становятся потом лучшими воспоминаниями жизни.</p>
+			</div>
+			<ul class="m-artist__list">
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"><img src="img/pic3.jpg" alt=""></a>							
 					</div>
-				</div>
-				<div class="m-slider__el">
-					<img src="img/pic2.jpg" alt="">
-					<div class="m-slider__text">
-						<div class="m-slider__title">бубубукинг<span>заказывайте артистов на artist.ua</span></div>							
-						<p>Букинг-агентство Artist.ua – это легкий и удобный способ пригласить артиста к Вам на праздник. На нашем портале регистрируются разножанровые артисты, танцоры, фотографы, художники. Ознакомится с их портфолио, и с помощью таймлайна, который ведет Артист, узнать его занятость на нужную дату мгновенно!</p>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
 					</div>
-				</div>
-				<div class="m-slider__el">
-					<img src="img/pic2.jpg" alt="">
-					<div class="m-slider__text">
-						<div class="m-slider__title">удобный букинг<span>заказывайте артистов на artist.ua</span></div>							
-						<p>Букинг-агентство Artist.ua – это легкий и удобный способ пригласить артиста к Вам на праздник. На нашем портале регистрируются разножанровые артисты, танцоры, фотографы, художники. Ознакомится с их портфолио, и с помощью таймлайна, который ведет Артист, узнать его занятость на нужную дату мгновенно!</p>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
 					</div>
-				</div>
-				<div class="m-slider__el">
-					<img src="img/pic2.jpg" alt="">
-					<div class="m-slider__text">
-						<div class="m-slider__title">бубубукинг<span>заказывайте артистов на artist.ua</span></div>							
-						<p>Букинг-агентство Artist.ua – это легкий и удобный способ пригласить артиста к Вам на праздник. На нашем портале регистрируются разножанровые артисты, танцоры, фотографы, художники. Ознакомится с их портфолио, и с помощью таймлайна, который ведет Артист, узнать его занятость на нужную дату мгновенно!</p>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
 					</div>
-				</div>
-			</div>			
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"><img src="img/pic3.jpg" alt=""></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"><img src="img/pic3.jpg" alt=""></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"><img src="img/pic3.jpg" alt=""></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+			</ul>				
 		</div>
-		<!-- END .m-slider -->
-		<!-- BEGIN .menu -->
-		<div class="menu">
-			<a class="menu__item-1" href="#">букинг<i></i></a>
-			<a class="menu__item-2" href="#">музыка<i></i></a>
-			<a class="menu__item-3" href="#">сервисы<i></i></a>
-			<a class="menu__item-4" href="#">фанзона<i></i></a>
+		<div class="m-artist m-artist_mod">
+			<div class="link-all">
+				<a href="#">Эксклюзив</a>
+			</div>
+			<div class="m-artist__desc">
+				<p>Эти Артисты есть только на Artist.ua. Только у нас вы сможете заказать их выступление, узнать больше информации о них и следить  за их деятельностью.Разрешите представить!</p>
+			</div>				
+			<ul class="m-artist__list">
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"><img src="img/pic3.jpg" alt=""></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"><img src="img/pic3.jpg" alt=""></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"><img src="img/pic3.jpg" alt=""></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"><img src="img/pic3.jpg" alt=""></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+			</ul>							
 		</div>
-		<!-- END .menu -->
-		<div class="m-news">
-			<div class="title">
-				<a href="#">Все новости</a>
+		<div class="m-artist">
+			<div class="link-all">
+				<a href="#">Открытие года</a>
 			</div>
-			<!-- BEGIN .item-wrap -->
-			<div class="item-wrap">
-				<div class="item item_big">
-					<div class="item__date">10 августа ‘12</div>
-					<a class="item__pic" href="#">
-						<img src="img/pic3.jpg" alt="">
-						<span class="item__title is-white">LOREM IPSUM</span>
-					</a>	
-					<div class="item__meta">
-						<span class="item__share"><i></i></span>
-						<a class="item__comm" href="#"><i></i>2</a>
-					</div>					
-				</div>
-				<div class="item">
-					<div class="item__date">10 августа ‘12</div>
-					<a class="item__pic" href="#">
-						<img src="img/pic4.jpg" alt="">
-					</a>
-					<div class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate laoreet orci, sed cursus velit iaculis a. Pellentesque habitant morbi tristique senectus et.</div>
-					<div class="item__meta">
-						<span class="item__share"><i></i>3</span>
-						<a class="item__comm" href="#"><i></i>2</a>
-					</div>		
-				</div>
-				<div class="item">
-					<div class="item__date">10 августа ‘12</div>
-					<a class="item__pic" href="#">
-						<img src="img/pic5.jpg" alt="">
-						<span class="item__new"><span>новый конкурс!</span></span>
-					</a>
-					<div class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate laoreet orci, sed.</div>
-					<div class="item__meta">
-						<span class="item__share"><i></i>3</span>
-						<a class="item__comm" href="#"><i></i>2</a>
-					</div>		
-				</div>
-				<div class="item">
-					<div class="item__date">10 августа ‘12</div>
-					<a class="item__pic" href="#">
-						<img src="img/pic6.jpg" alt="">
-					</a>
-					<div class="item__meta">
-						<span class="item__share"><i></i>3</span>
-						<a class="item__comm" href="#"><i></i>2</a>
-					</div>		
-				</div>
-				<div class="item">
-					<div class="item__date">10 августа ‘12</div>
-					<a class="item__pic" href="#">
-						<img src="img/pic4.jpg" alt="">
-					</a>
-					<div class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate laoreet orci, sed cursus velit iaculis a. Pellentesque habitant morbi tristique senectus et.</div>
-					<div class="item__meta">
-						<span class="item__share"><i></i>3</span>
-						<a class="item__comm" href="#"><i></i>2</a>
-					</div>		
-				</div>
-				<div class="item">
-					<div class="item__date">10 августа ‘12</div>
-					<a class="item__pic" href="#">
-						<img src="img/pic5.jpg" alt="">
-						<span class="item__new"><span>новый конкурс!</span></span>
-					</a>
-					<div class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate laoreet orci, sed.</div>
-					<div class="item__meta">
-						<span class="item__share"><i></i>3</span>
-						<a class="item__comm" href="#"><i></i>2</a>
-					</div>		
-				</div>
-				<div class="item item_big">
-					<div class="item__date">10 августа ‘12</div>
-					<a class="item__pic" href="#">
-						<img src="img/pic3.jpg" alt="">
-						<span class="item__title is-black">LOREM IPSUM</span>
-					</a>	
-					<div class="item__meta">
-						<span class="item__share"><i></i></span>
-						<a class="item__comm" href="#"><i></i>2</a>
-					</div>					
-				</div>
-				<div class="item">
-					<div class="item__date">10 августа ‘12</div>
-					<a class="item__pic" href="#">
-						<img src="img/pic6.jpg" alt="">
-						<span class="item__title is-white">LOREM IPSUM</span>
-					</a>
-					<div class="item__meta">
-						<span class="item__share"><i></i>3</span>
-						<a class="item__comm" href="#"><i></i>2</a>
-					</div>		
-				</div>
+			<div class="m-artist__desc">
+				<p>Открытие года – это молодые, амбициозные исполнители-новички, победители в различных конкурсах и талант-шоу. Кто знает, может они новые THE BEATLES?!</p>
 			</div>
-			<!-- END .item-wrap -->
-		</div>
-		<div class="m-category">			
-			<div class="m-artist">
-				<div class="title">
-					<a href="#">Звезды</a>
-				</div>
-				<div class="m-artist__desc">
-					<p>В этом разделе можно выбрать и заказать на мероприятие  выступление Артистов, которые уже завоевали любовь и признание тысячей  и носят гордый статус Звезд.  Проведение мероприятий с участием таких Артистов становятся потом лучшими воспоминаниями жизни.</p>
-				</div>
-				<ul class="m-artist__list">
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"><img src="img/pic3.jpg" alt=""></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"><img src="img/pic3.jpg" alt=""></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"><img src="img/pic3.jpg" alt=""></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"><img src="img/pic3.jpg" alt=""></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-				</ul>				
-			</div>
-			<div class="m-artist m-artist_mod">
-				<div class="title">
-					<a href="#">Эксклюзив</a>
-				</div>
-				<div class="m-artist__desc">
-					<p>Эти Артисты есть только на Artist.ua. Только у нас вы сможете заказать их выступление, узнать больше информации о них и следить  за их деятельностью.Разрешите представить!</p>
-				</div>				
-				<ul class="m-artist__list">
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"><img src="img/pic3.jpg" alt=""></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"><img src="img/pic3.jpg" alt=""></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"><img src="img/pic3.jpg" alt=""></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"><img src="img/pic3.jpg" alt=""></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-				</ul>							
-			</div>
-			<div class="m-artist">
-				<div class="title">
-					<a href="#">Открытие года</a>
-				</div>
-				<div class="m-artist__desc">
-					<p>Открытие года – это молодые, амбициозные исполнители-новички, победители в различных конкурсах и талант-шоу. Кто знает, может они новые THE BEATLES?!</p>
-				</div>
-				<ul class="m-artist__list">
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"><img src="img/pic3.jpg" alt=""></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"><img src="img/pic3.jpg" alt=""></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"><img src="img/pic3.jpg" alt=""></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"><img src="img/pic3.jpg" alt=""></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="m-artist__pic">
-							<a href="#"></a>							
-						</div>
-						<div class="m-artist__name">
-							<a href="#">JOHN DOE</a>
-						</div>
-						<div class="m-artist__info">
-							<a href="#">Украина</a>
-						</div>
-						<div class="m-artist__go">
-							<a href="#">52<i></i></a>
-						</div>
-					</li>
-				</ul>				
-			</div>
+			<ul class="m-artist__list">
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"><img src="img/pic3.jpg" alt=""></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"><img src="img/pic3.jpg" alt=""></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"><img src="img/pic3.jpg" alt=""></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"><img src="img/pic3.jpg" alt=""></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-artist__pic">
+						<a href="#"></a>							
+					</div>
+					<div class="m-artist__name">
+						<a href="#">JOHN DOE</a>
+					</div>
+					<div class="m-artist__info">
+						<a href="#">Украина</a>
+					</div>
+					<div class="m-artist__go">
+						<a href="#">52<i></i></a>
+					</div>
+				</li>
+			</ul>				
 		</div>
 	</div>
-	<div class="push"></div>
-</section>
+	<!-- BEGIN .footer -->
+	<footer class="footer">
+		<div class="footer__in">
+			<div class="footer__logo">
+				<a href="#"></a>
+			</div>
+			<div class="footer__info">
+				<div class="footer__detail">
+					<div class="footer__about">ARTIST.UA - это интернет-ресурс с самой большой базой звезд шоу-бизнеса. Наш сайт объединяет людей в комьюнити  разных профессий и направлений, у которых общее одно – творческое видение действительности, любовь к искусству и искренне желание дарить другим радость и ощущение праздника. Мы создали портал для Артистов, Фанатов, Организаторов, представителей СМИ и заведений, что бы каждый нашел возможность создать, узнать или просто поучаствовать в культурной и разнообразной жизни нашей страны.  HAVE FUN WITH US! Присоединяйтесь!</div>
+					<div class="footer__contacts">
+						<a class="footer__skype" href="callto:artistua">artistua<i></i></a>
+						<a class="footer__mail" href="mailto:support@artist.ua">support@artist.ua<i></i></a>
+						<span class="footer__phone">+38 (044) 587 75 79<i></i></span>
+					</div>
+				</div>
+				<div class="footer__links">
+					<nav class="footer__nav">
+						<ul>
+							<li><a href="#">ГЛАВНАЯ</a></li>
+							<li><a href="#">О НАС</a></li>
+							<li><a href="#">новости</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">КОНТАКТЫ</a></li>
+							<li><a href="#">СОГЛАШЕНИЕ</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</nav>
+					<nav class="footer__menu">
+						<ul>
+							<li><a href="#">БУКИНГ</a></li>
+							<li><a href="#">МУЗЫКА</a></li>
+							<li><a href="#">СЕРВИСЫ</a></li>
+							<li><a href="#">ФАНЗОНА</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="footer__social">
+			<div class="footer__fb">
+				<img src="img/fb.png" alt="">
+			</div>
+			<div class="footer__vk">
+				<img src="img/vk.png" alt="">
+			</div>
+		</div>			
+	</footer>
+	<!-- END .footer -->		
+</div>
 <!-- END .wrap -->
-<!-- BEGIN .footer -->
-<footer class="footer">
-
-</footer>
-<!-- END .footer -->
+<!-- BEGIN .copyright -->
+<div class="copyright">© 2009-2012. Artist.ua, все права защищены. Использование материалов разрешено только с предварительного разрешения правообладателей.</div>
+<!-- END .copyright -->
 </body>
 </html>
