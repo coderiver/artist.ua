@@ -104,24 +104,38 @@
 			<nav class="content__tabs">
 				<ul>
 					<li>Личные данные</li>
-					<li class="is-active">Архив райдеров</li>
-					<li>Изменить фон</li>
+					<li>Архив райдеров</li>
+					<li class="is-active">Изменить фон</li>
 				</ul>
 			</nav>
 			<div class="tab-item">
 				<article>
-					<p>Вы можете хранить все свои технические райдеры, в случае необходимости - публиковать их в разделе “Биография и услуги”. Технический райдер виден исключительно заказчику в случае оформления предзаказа.</p>
-					<p>Формат райдера: .doc, .txt.</p>
+					<p class="permission-status">Услуга активирована</p>
 				</article>
-				<div class="riders">
-					<p>Список доступных райдеров:</p>
-					<ul class="riders-list">
-						<li><a href="#">Технический райдер John Doe.doc</a><span class="delete"></span></li>
-						<li><a href="#">Технический райдер 2.doc</a><span class="delete"></span></li>
-					</ul>
-					<button class="btn btn_150">Загрузить</button>
+				<div class="bg">
+					<p class="bg__text">Фон:</p>
+					<div class="bg__img">
+						<span class="delete"></span>
+					</div>
+					<div class="bg__form">
+						<form>
+							<span class="bg__upload">Загрузить изображение...</span>
+							<p>Максимальный размер файла 5 мб.</p>
+							<label><input type="checkbox"><span>Слева</span></label>
+							<label><input type="checkbox"><span>Справа</span></label>
+							<label><input type="checkbox"><span>По центру</span></label>
+							<label class="bottom"><input type="checkbox"><span>Замостить</span></label>
+						</form>
+					</div>
 				</div>
-				<p class="rider__attention">Администрация оставляет за собой право модерировать загруженные технические райдеры Артиста перед предоставлением доступа к ним Заказчика.</p>
+				<div class="bg__buttons">
+					<button class="btn btn_grey">Предпросмотр</button>
+					<button class="btn">Сохранить изменения</button>
+				</div>
+				<div class="bg__attention">
+					<p>Теперь Вы можете менять фон своей страницы, брендировать ее на свое усмотрение.</p>
+					<p>Это поможет сделать Вашу страницу более запоминающейся и подчеркнуть Вашу индивидуальность, как артиста.</p>
+				</div>
 			</div>
 		</div>
 	</div>

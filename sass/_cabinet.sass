@@ -45,6 +45,8 @@
 		font-size: 14px
 		font-weight: bold 
 		cursor: pointer
+		&:hover
+			color: $yl
 	li.is-active
 		background: #f2f2f2
 		color: $yl
@@ -59,7 +61,7 @@
 		margin-bottom: 45px
 	p
 		color: #acacac
-.upload
+.riders
 	margin-bottom: 46px
 	font-size: 14px
 	p
@@ -83,8 +85,57 @@
 		.delete
 			display: inline-block
 			margin-left: 10px
-			+s(delete)
-			cursor: pointer
 .rider__attention
 	position: absolute
 	bottom: 28px
+
+// background
+.permission-status
+	font-size: 14px
+.bg
+	+clr
+p.bg__text
+	float: left
+	color: #000
+.bg__img
+	position: relative
+	float: left
+	width: 202px
+	height: 137px
+	margin: 0 18px
+	background: #d7d7d7
+	img
+		width: 100%
+		height: 100%
+	.delete
+		position: absolute
+		top: 10px
+		right: 10px	
+.bg__form
+	float: left
+	p
+		margin: 5px 0
+	label
+		display: block
+		margin-bottom: 5px
+		span
+			display: inline-block
+			margin-left: 5px
+	label.bottom
+		margin-top: 27px
+.bg__upload
+	text-decoration: underline
+	font-size: 14px
+	cursor: pointer
+	&:hover
+		text-decoration: none
+.bg__buttons
+	margin: 35px 0 68px 110px
+	button
+		margin-right: 20px		
+.bg__attention
+	position: absolute
+	bottom: 28px
+	p
+		font-size: 13px
+		margin-top: 5px		

@@ -540,6 +540,14 @@ a
 .btn_150
 	width: 150px
 	text-align: center
+.btn_grey
+	border: 1px solid #e8e8e8
+	+background-image(linear-gradient(bottom, #dcdcdc, #fbfbfb))
+	color: #5c5a5a
+	&:hover
+		+background-image(linear-gradient(bottom, #dcdcdc 30%, #fbfbfb))
+	&:active
+		background: #dcdcdc	
 //label
 .label
 	span 
@@ -610,3 +618,7 @@ a
 		content: ""
 		position: absolute
 		+s(echo)
+// delete
+.delete
+	cursor: pointer
+	+s(delete)
