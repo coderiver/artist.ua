@@ -36,7 +36,11 @@ button
 	&::-moz-focus-inner
 		padding: 0
 		border: 0
-table 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section
+	display: block
+table
 	border-spacing: 0
 	border-collapse: collapse
 // common styles
@@ -533,6 +537,9 @@ a
 		+background-image(linear-gradient(bottom, #d78207 30%, #ffc700))
 	&:active
 		background: #d78207
+.btn_150
+	width: 150px
+	text-align: center
 //label
 .label
 	span 
@@ -548,4 +555,58 @@ a
 		padding: 3px 5px
 		border: 1px solid #d7d7d7
 .fieldset
-	+clr	
+	+clr
+
+//aside
+.aside
+	width: 183px
+	float: left
+	margin-right: 20px
+	padding: 14px 12px 25px
+	background: #f2f2f2
+	+box
+.aside__nav
+	margin-top: 35px
+	&:first-child
+		margin-top: 0
+	.btn
+		margin-top: 20px	
+.aside__nav_blocked
+	color: #aaa
+	.aside__menu li a
+		color: #aaa
+		&:hover
+			color: #aaa
+.aside__title
+	position: relative
+	display: inline-block
+	margin-bottom: 15px
+	+font
+	font-size: 18px
+	cursor: pointer
+	&:after
+		content: ""
+		position: absolute
+		top: 8px
+		right: -13px
+		+s(arr-down)
+.aside__menu
+	font-size: 14px
+	li
+		margin-bottom: 5px
+		a:hover
+			color: $yl
+	li.is-active
+		a
+			color: $yl
+.new-message
+	position: relative
+	display: inline-block
+	margin-left: 5px
+	color: $yl
+	font-weight: bold
+	font-size: 12px
+	&:after
+		content: ""
+		position: absolute
+		+s(echo)

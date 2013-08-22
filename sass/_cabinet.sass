@@ -1,0 +1,90 @@
+@import "base"
+//styles for cabinet pages
+.inner-wrap
+	+clr
+	padding: 15px 20px 18px
+.content
+	overflow: hidden	
+.content__menu
+	margin-bottom: 16px
+	text-align: center
+	border-bottom: 1px solid #d7d7d7
+	+box
+	li
+		position: relative
+		display: inline-block
+		height: 63px
+		line-height: 63px
+		padding: 0 27px
+		a
+			display: block
+			width: 100%
+			height: 100%
+			+font
+			color: #3b3b3b
+			font-size: 18px
+		&:hover
+			a
+				color: $yl
+	li.is-active
+		&:after
+			content: ""
+			position: absolute
+			bottom: -2px
+			left: 50%
+			margin-left: -12px
+			+s(triangle)
+		a
+			color: $yl
+.content__tabs
+	li
+		display: inline-block
+		height: 52px
+		line-height: 52px
+		padding: 0 52px
+		font-size: 14px
+		font-weight: bold 
+		cursor: pointer
+	li.is-active
+		background: #f2f2f2
+		color: $yl
+
+// rider
+.tab-item
+	position: relative
+	min-height: 359px
+	padding: 28px 22px
+	background: #f2f2f2
+	article
+		margin-bottom: 45px
+	p
+		color: #acacac
+.upload
+	margin-bottom: 46px
+	font-size: 14px
+	p
+		color: #000
+.riders-list
+	margin: 20px 0
+	li
+		position: relative
+		margin-bottom: 5px
+		padding-left: 16px
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			+s(clip)
+		a
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+		.delete
+			display: inline-block
+			margin-left: 10px
+			+s(delete)
+			cursor: pointer
+.rider__attention
+	position: absolute
+	bottom: 28px
