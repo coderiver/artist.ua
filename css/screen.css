@@ -555,8 +555,14 @@ a.meta__share:hover, a.meta__comm:hover, a.meta__go:hover { text-decoration: und
 
 .permission-status { font-size: 14px; }
 
+.permission-status.blocked { color: black; text-decoration: underline; }
+.permission-status.blocked:hover { text-decoration: none; }
+
 .bg:before, .bg:after { content: ""; display: table; }
 .bg:after { clear: both; }
+
+.bg.blocked { color: #acacac; }
+.bg.blocked p.bg__text { color: #acacac; }
 
 p.bg__text { float: left; color: black; }
 

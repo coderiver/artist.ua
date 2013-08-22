@@ -92,8 +92,17 @@
 // background
 .permission-status
 	font-size: 14px
+.permission-status.blocked
+	color: #000
+	text-decoration: underline
+	&:hover
+		text-decoration: none	
 .bg
 	+clr
+.bg.blocked
+	color: #acacac
+	p.bg__text
+		color: #acacac	
 p.bg__text
 	float: left
 	color: #000
