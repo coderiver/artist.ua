@@ -587,11 +587,27 @@ p.bg__text { float: left; color: black; }
 
 .privat-info:before, .privat-info:after { content: ""; display: table; }
 .privat-info:after { clear: both; }
+.privat-info li { height: 34px; line-height: 24px; font-size: 14px; }
+.privat-info li .privat-info__text { float: left; width: 245px; height: 34px; line-height: 34px; text-align: right; margin-right: 20px; color: black; }
+.privat-info li label { position: relative; display: inline-block; vertical-align: middle; }
+.privat-info li label.necessarily:after { content: ""; position: absolute; top: 5px; right: -6px; background: url('../img/icons-s651f94c88a.png') 0 -2181px no-repeat; width: 7px; height: 7px; }
 
-.privat-info__col { width: 240px; float: left; text-align: right; }
-.privat-info__col li { height: 34px; line-height: 24px; font-size: 14px; }
-.privat-info__col li label { position: relative; }
-.privat-info__col li label:after { content: ""; position: absolute; top: -3px; right: -12px; background: url('../img/icons-s651f94c88a.png') 0 -2181px no-repeat; width: 7px; height: 7px; }
-.privat-info__col li .input { width: 258px; background: transparent; padding: 0 5px; height: 24px; border: 1px solid #d7d7d7; font-size: 14px; -moz-box-sizing: border-box; box-sizing: border-box; }
+.input { width: 258px; margin: 5px 5px 0 0; background: transparent; padding: 0 15px; height: 24px; border: 1px solid #d7d7d7; font-size: 14px; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-.privat-info__col_right { width: 493px; float: left; padding-left: 18px; text-align: left; -moz-box-sizing: border-box; box-sizing: border-box; }
+.input_short { width: 110px; }
+
+.select { position: relative; display: inline-block; width: 258px; height: 24px; line-height: 24px; margin: 5px 5px 0 0; padding: 0 15px; font-size: 14px; border: 1px solid #d7d7d7; -moz-box-sizing: border-box; box-sizing: border-box; cursor: pointer; }
+.select:after { content: ""; position: absolute; top: 8px; right: 8px; background: url('../img/icons-s651f94c88a.png') 0 -2126px no-repeat; width: 8px; height: 7px; }
+
+.select_sex { width: 110px; }
+
+.select_date { width: 52px; }
+
+.select_year { width: 70px; }
+
+.checkbox { color: #acacac; font-size: 13px; }
+.checkbox input { margin-right: 5px; }
+
+.hint { color: #acacac; font-size: 13px; }
+
+.privat-info__bg { text-align: center; }
