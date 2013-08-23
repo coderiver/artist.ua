@@ -241,6 +241,11 @@ p.bg__text
 		padding: 4px 25px
 		border-bottom: 1px solid #d7d7d7
 		+box-shadow(0 1px 2px #fff)
+		&:first-child
+			border-top: 1px solid #d7d7d7
+		&:hover
+			.audio__add i
+				display: block	
 	li.is-active
 		+background-image(linear-gradient(top, #fff, #f5f5f5))
 		.audio__name
@@ -262,16 +267,19 @@ p.bg__text
 	float: left
 	width: 335px
 	height: 26px
-	line-height: 22px
+	line-height: 24px
 	padding: 0 8px  
 	+box
 	span
 		position: relative
 		font-size: 14px
 		z-index: 2
+	b
+		position: relative
+		z-index: 2	
 	.audio__progress
 		position: absolute
-		top: -2px
+		top: 0px
 		left: -2px
 		bottom: 0
 		width: 30%
@@ -329,7 +337,7 @@ p.bg__text
 		cursor: pointer
 .audio__share
 	float: left
-	width: 148px
+	width: 118px
 	height: 26px
 	line-height: 26px
 	a
@@ -342,10 +350,39 @@ p.bg__text
 			top: 0
 			right: -28px
 			+s(share)
+.audio__add
+	position: relative
+	float: left
+	width: 30px
+	height: 26px
+	i
+		display: none
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -6px
+		+s(plus)
+		cursor: pointer
 .audio__delete
 	float: right
 	.delete
 		margin-top: 8px
+
+// playlist search results
+.search-results
+	margin-bottom: 65px
+	.audio__name
+		span
+			color: $yl 
+.search-results p:first-child
+	margin-bottom: 12px
+	font-size: 14px
+	color: $yl
+.wrapper-audio p:first-child
+	margin-bottom: 12px
+	font-size: 14px
+	color: #000		
+
 
 						 
 						 	
