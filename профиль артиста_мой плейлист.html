@@ -46,7 +46,7 @@
 	<!-- BEGIN .header -->
 	<header class="header">
 		<nav class="nav">
-			<a class="is-active" href="#">ГЛАВНАЯ</a>
+			<a href="#">ГЛАВНАЯ</a>
 			<a href="#">О НАС</a>
 			<a href="#">новости</a>
 			<a href="#">FAQ</a>
@@ -75,8 +75,8 @@
 			<nav class="aside__nav">
 				<span class="aside__title">Мой кабинет</span>
 				<ul class="aside__menu">
-					<li class="is-active"><a href="#">Профиль</a></li>
-					<li><a href="#">Мой плейлист</a></li>
+					<li><a href="#">Профиль</a></li>
+					<li class="is-active"><a href="#">Мой плейлист</a></li>
 					<li><a href="#">Сотрудничество</a></li>
 				</ul>
 			</nav>
@@ -96,75 +96,110 @@
 		<div class="content">
 			<nav class="content__menu">
 				<ul>
-					<li class="is-active"><a href="#">Профиль</a></li>
-					<li><a href="#">Плейлист</a></li>
+					<li><a href="#">Профиль</a></li>
+					<li class="is-active"><a href="#">Плейлист</a></li>
 					<li><a href="#">Сотрудничество</a></li>
 				</ul>
 			</nav>
 			<nav class="content__tabs">
 				<ul>
-					<li class="is-active">Личные данные</li>
-					<li>Архив райдеров</li>
-					<li>Изменить фон</li>
+					<li class="is-active">Аудиозаписи</li>
+					<li>Подкасты</li>
 				</ul>
+				<input class="content__search" type="text" placeholder="Поиск по всем аудиозаписям...">
 			</nav>
 			<div class="tab-item">
-				<article>
-					<p>Личные данные пользователя являются конфиденциальной информацией и доступны только самому пользователю и администрации сайта. Корректная информация о личных данных позволит оперативно связываться с Вами в случае поступления предзаказа на Ваши услуги.</p>
-					<p>* Поля обязательны для заполнения.</p>
-				</article>
-				<div class="privat-info">
-					<ul>
-						<li>
-							<label class="necessarily"><span class="privat-info__text">Имя:</span><input class="input" type="text"></label>
-						</li>
-						<li>
-							<label class="necessarily"><span class="privat-info__text">Фамилия:</span><input class="input" type="text"></label>
-						</li>
-						<li>
-							<label class="necessarily"><span class="privat-info__text">Страна:</span><span class="select"></span></label>
-						</li>
-						<li>
-							<label class="necessarily"><span class="privat-info__text">Город:</span><input class="input" type="text"></label></li>
-						<li>
-							<label class="necessarily"><span class="privat-info__text">Пол:</span><span class="select select_sex"></span></label>
-						</li>
-						<li>
-							<label><span class="privat-info__text">Дата рождения:</span><span class="select select_date"></span><span class="select select_date"></span><span class="select select_year"></span></label>
-							<label class="checkbox"><input type="checkbox">Показывать на сайте</label>
-						</li>
-						<li>
-							<label class="necessarily"><span class="privat-info__text">Телефон:</span><input class="input input_short" type="text"></label>
-						</li>
-						<li>
-							<label><span class="privat-info__text">Skype:</span><input class="input input_short" type="text"></label>
-						</li>
-						<li>
-							<label><span class="privat-info__text">Сайт:</span><input class="input" type="text"></label>
-						</li>
-						<li>
-							<label><span class="privat-info__text">e-mail:</span><input class="input" type="text"></label>
-						</li>
-						<li>
-							<span class="privat-info__text"></span><label class="checkbox"><input type="checkbox">Присылать мне уведомления о предстоящих мероприятиях.</label>
-						</li>
-						<li>
-							<label><span class="privat-info__text">Старый пароль:</span><input class="input" type="password"></label>
-						</li>
-						<li>
-							<label><span class="privat-info__text">Новый пароль:</span><input class="input" type="password"></label>
-						</li>
-						<li>
-							<label><span class="privat-info__text">Повторите пароль:</span><input class="input" type="password"></label>
-						</li>
-						<li>
-							<span class="privat-info__text"></span><span class="hint">Пароль должен содержать неменее 6 символов</span>
-						</li>
-					</ul>
-					<div class="privat-info__bg">
-						<button class="btn">Сохранить</button>
-					</div>
-				</div>
+				<ul class="audio">
+					<li class="is-active">	
+						<div class="audio__play"><i class="pause"></i></div>
+						<div class="audio__name">
+							<span>Осень золотая</span>
+							<div class="audio__progress"></div>
+						</div>
+						<div class="audio__time">06:08</div>
+						<div class="audio__volume">
+							<i class="icon-volume"></i>
+							<div class="volume__control">
+								<div class="volume__level"></div>	
+							</div>
+						</div>
+						<div class="audio__buy"><i></i></div>
+						<div class="audio__share">
+							<a href="#">Поделиться</a>
+						</div>
+						<div class="audio__delete">
+							<p class="delete"></p>
+						</div>
+					</li>
+					<li>
+						<div class="audio__play"><i class="play"></i></div>
+						<div class="audio__name">
+							<span>Осень золотая</span>
+						</div>
+						<div class="audio__time">06:08</div>
+						<div class="audio__volume">
+							
+						</div>
+						<div class="audio__buy"><i></i></div>
+						<div class="audio__share">
+							<a href="#">Поделиться</a>
+						</div>
+						<div class="audio__delete">
+							<p class="delete"></p>
+						</div>
+					</li>
+					<li>
+						<div class="audio__play"><i class="play"></i></div>
+						<div class="audio__name">
+							<span>Осень золотая</span>
+						</div>
+						<div class="audio__time">06:08</div>
+						<div class="audio__volume">
+							
+						</div>
+						<div class="audio__buy"><i></i></div>
+						<div class="audio__share">
+							
+						</div>
+						<div class="audio__delete">
+							<p class="delete"></p>
+						</div>
+					</li>
+					<li>
+						<div class="audio__play"><i class="play"></i></div>
+						<div class="audio__name">
+							<span>Осень золотая</span>
+						</div>
+						<div class="audio__time">06:08</div>
+						<div class="audio__volume">
+							
+						</div>
+						<div class="audio__buy"></div>
+						<div class="audio__share">
+							
+						</div>
+						<div class="audio__delete">
+							<p class="delete"></p>
+						</div>
+					</li>
+					<li>
+						<div class="audio__play"><i class="play"></i></div>
+						<div class="audio__name">
+							<span>Осень золотая</span>
+						</div>
+						<div class="audio__time">06:08</div>
+						<div class="audio__volume">
+							
+						</div>
+						<div class="audio__buy"></div>
+						<div class="audio__share">
+							
+						</div>
+						<div class="audio__delete">
+							<p class="delete"></p>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
