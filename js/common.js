@@ -19,4 +19,17 @@ function accordeon() {
 };
 accordeon();
 
+// select list
+$(".select-list").hide();
+$(".select").click(function(){
+	$(".select-list").show();
+});
+$(".select-list li").on("click",function(){
+	var select = $(this).text();
+	$(this).parent().parent().find('span').text(select);
+	$(".select-list").hide();
+});
+
+
+
 });
