@@ -22,14 +22,22 @@ accordeon();
 // select list
 $(".select-list").hide();
 $(".select").click(function(){
-	$(".select-list").show();
+	if ($(this).hasClass("is-active")) {
+		$(this).removeClass("is-active");
+		$(this).find('.select-list').hide();
+	}
+	else{
+		$(this).addClass("is-active");
+		$(this).find('.select-list').show();
+	}
 });
-$(".select-list li").on("click",function(){
+$(".select-list li").click(function(){
 	var select = $(this).text();
 	$(this).parent().parent().find('span').text(select);
-	$(".select-list").hide();
+	
+	var data = $(this).attr("data-id");
+	$(this).parent().parent().find('input').val(data);
 });
-
 
 
 });
