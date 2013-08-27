@@ -39,5 +39,23 @@ $(".select-list li").click(function(){
 	$(this).parent().parent().find('input').val(data);
 });
 
+// spoiler
+$(".js-spoiler-text").hide();	
+$(".js-spoiler").click(function(){
+	if ($(this).hasClass("is-open")){
+		$(this).removeClass("is-open");
+		$(this).find('.js-spoiler-text').slideUp();
+	}
+	else{
+		$(this).addClass("is-open");
+		$(this).find('.js-spoiler-text').slideDown();
+	}
+});
+
+// info hint
+$(".info i").click(function(){
+	$(this).parent().toggleClass('is-open');
+});
+
 
 });

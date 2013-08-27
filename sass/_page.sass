@@ -1,0 +1,71 @@
+@import "base"
+
+.page
+	padding: 0 20px
+.wrap-account
+	position: relative
+	+clr
+.avatar
+	overflow: hidden
+	float: left
+	width: 146px
+	height: 146px
+	margin: 0 25px 42px 0
+	+border-radius(50%)
+	img
+		width: 100%
+.account
+	float: left
+	width: 566px 
+	padding-top: 15px
+	font-size: 14px
+	p
+		margin-top: 9px		
+.account__page
+	margin-top: 9px
+	.info
+		display: none
+.account__page.blocked
+	color: #aaa
+	a
+		display: inline-block
+		color: #aaa
+	.info
+		display: inline-block
+.account__alert
+	position: relative
+	display: inline-block
+	margin-top: 9px 		
+.account__edit
+	position: absolute
+	top: 15px
+	right: 15px
+	padding-right: 23px
+	font-size: 12px
+	color: #aaa
+	cursor: pointer
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		right: 0
+		+s(edit)
+	&:hover
+		color: #3c3c3c
+		text-decoration: underline
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			right: 0
+			+s(edit-hover)
+.biography
+	clear: both
+	margin-bottom: 45px
+	font-size: 14px
+	color: #5b5a5a
+.biography__add
+	text-decoration: underline
+	cursor: pointer
+	&:hover
+		text-decoration: none						 		 		
