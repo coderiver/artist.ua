@@ -1,0 +1,171 @@
+@import "base"
+
+// profile
+.page
+	padding: 0 20px
+.wrap-account
+	position: relative
+	+clr
+.avatar
+	overflow: hidden
+	float: left
+	width: 146px
+	height: 146px
+	margin: 0 25px 42px 0
+	+border-radius(50%)
+	img
+		width: 100%
+.account
+	float: left
+	width: 566px 
+	padding-top: 15px
+	font-size: 14px
+	p
+		margin-top: 9px		
+.account__page
+	margin-top: 9px
+	.info
+		display: none
+.account__page.blocked
+	color: #aaa
+	a
+		display: inline-block
+		color: #aaa
+	.info
+		display: inline-block
+.account__alert
+	position: relative
+	display: inline-block
+	margin-top: 9px 		
+.account__edit
+	position: absolute
+	top: 15px
+	right: 15px
+	padding-right: 23px
+	font-size: 12px
+	color: #aaa
+	cursor: pointer
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		right: 0
+		+s(edit)
+	&:hover
+		color: #3c3c3c
+		text-decoration: underline
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			right: 0
+			+s(edit-hover)
+.biography
+	clear: both
+	margin-bottom: 45px
+	font-size: 14px
+	color: #5b5a5a
+.biography__add
+	text-decoration: underline
+	cursor: pointer
+	&:hover
+		text-decoration: none						 		 		
+
+// fan-groups
+.wrap-fan-group
+	background: #f2f2f2
+.f-head
+	height: 65px
+	+box
+	padding: 0 22px
+	border-bottom: 1px solid #d7d7d7
+	font-size: 14px
+	p
+		float: left
+		height: 65px
+		line-height: 65px
+	a
+		float: right
+		text-decoration: underline
+		height: 65px
+		line-height: 65px
+		&:hover
+			text-decoration: none
+.fan-group
+	height: 65px
+	padding: 0 23px
+	border-bottom: 1px solid #d7d7d7
+	+clr
+	font-size: 14px
+	color: #5b5a5a
+	a
+		font-size: 14px
+		color: #5b5a5a
+	&:hover
+		+background-image(linear-gradient(top, #fff 0%, #f5f5f5 100%))
+		a
+			text-decoration: underline
+.fan-group__img
+	float: left
+	width: 56px
+	height: 56px
+	+border-radius(50%)
+	overflow: hidden
+	margin: 5px 26px 0 0
+.fan-group__name
+	float: left
+	width: 113px
+	height: 65px
+	text-align: center
+	+box
+	padding-top: 10px
+.fan-group__link
+	float: left
+	width: 245px
+	height: 65px
+	line-height: 65px
+.fan-group__news
+	float: left
+	width: 185px
+	height: 65px
+	padding-right: 30px
+	+box
+	text-align: right
+	a
+		position: relative
+		display: inline-block
+		height: 65px
+		line-height: 65px
+		text-decoration: underline
+		color: $yl
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			right: -9px
+			margin-top: -8px
+			+s(echo)
+			
+.fan-group__people
+	float: left
+	width: 65px
+	height: 65px
+	line-height: 65px
+	text-align: center
+	span
+		position: relative
+		font-size: 12px
+		color: #5b5a5a
+		i
+			position: absolute
+			top: 0
+			left: -17px
+			+s(go)
+.fan-group__delete
+	float: right
+	width: 23px
+	height: 65px
+	line-height: 65px
+	text-align: center
+	i
+		display: inline-block		 									 		

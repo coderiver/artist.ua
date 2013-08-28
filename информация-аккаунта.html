@@ -65,141 +65,74 @@
 			<nav class="aside__nav">
 				<span class="aside__title">Моя страница</span>
 				<ul class="aside__menu">
-					<li><a href="#">Биография и услуги</a></li>
-					<li><a href="#">Мои аудиозаписи</a></li>
-					<li><a href="#">Мои видеозаписи</a></li>
+					<li class="is-active"><a href="#">Информация аккаунта</a></li>
 					<li><a href="#">Календарь</a></li>
-					<li><a href="#">Фанзона</a><span class="new-message">1</span></li>
+					<li><a href="#">Избранные артисты</a></li>
+					<li><a href="#">Фансообщества</a></li>
 				</ul>
 			</nav>
 			<nav class="aside__nav">
 				<span class="aside__title">Мой кабинет</span>
 				<ul class="aside__menu">
 					<li><a href="#">Профиль</a></li>
-					<li class="is-active"><a href="#">Мой плейлист</a></li>
+					<li><a href="#">Мой плейлист</a></li>
 					<li><a href="#">Сотрудничество</a></li>
 				</ul>
 			</nav>
 			<nav class="aside__nav aside__nav_blocked">
-				<span class="aside__title">Мой кабинет</span>
+				<span class="aside__title">Мои сервисы</span>
 				<ul class="aside__menu">
-					<li><a href="#">Продажа музыки</a></li>
-					<li><a href="#">Продажа видео</a></li>
+					<li><a href="#">Мои покупки</a></li>
 					<li><a href="#">Онлайн</a></li>
 					<li><a href="#">Краундфандинг</a></li>
 					<li><a href="#">Аукцион</a></li>
-					<li><a href="#">Статистика</a></li>
 				</ul>
-				<button class="btn btn_150">Активировать</button>
 			</nav>
 		</aside>
 		<div class="content">
 			<nav class="content__menu">
 				<ul>
-					<li><a href="#">Профиль</a></li>
-					<li class="is-active"><a href="#">Плейлист</a></li>
-					<li><a href="#">Сотрудничество</a></li>
+					<li class="is-active"><a href="#">Информация аккаунта</a></li>
+					<li><a href="#">Календарь</a></li>
+					<li><a href="#">Избранные артисты</a></li>
+					<li><a href="#">Фансообщества</a></li>
 				</ul>
 			</nav>
-			<nav class="content__tabs">
-				<ul>
-					<li class="is-active">Аудиозаписи</li>
-					<li>Подкасты</li>
-				</ul>
-				<input class="content__search" type="text" placeholder="Поиск по всем аудиозаписям...">
-			</nav>
-			<div class="tab-item">
-				<ul class="wrap-audio">
-					<li class="audio is-active">	
-						<div class="audio__play"><i class="pause"></i></div>
-						<div class="audio__name">
-							<span>Осень золотая</span>
-							<div class="audio__progress"></div>
-						</div>
-						<div class="audio__time">06:08</div>
-						<div class="audio__volume">
-							<i class="icon-volume"></i>
-							<div class="volume__control">
-								<div class="volume__level"></div>	
+			<div class="page">
+				<div class="wrap-account">
+					<div class="avatar">
+						<img src="http://lorempixel.com/146/146" alt="">
+					</div>
+					<div class="account">
+						<h1 class="h1">John Doe</h1>
+						<p class="account__birthday">22.02.1973</p>
+						<p class="account__place">Киев, Украина</p>
+						<div class="account__page blocked">
+							<p><a href="#">johndoe.artist.ua</a></p>
+							<div class="account__alert">
+								В данный момент Ваша страница скрыта.
+								<div class="info">
+									<i></i>
+									<div class="info__hint">
+										<p>В данный момент Ваша страница скрыта от пользователей сайта. Вы можете сделать ее доступной всем и получить короткий адрес активировав эту услугу.</p>
+										<button class="btn">Активировать</button>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="audio__buy"><i></i></div>
-						<div class="audio__share">
-							<a href="#">Поделиться</a>
-						</div>
-						<div class="audio__delete">
-							<p class="delete"></p>
-						</div>
-					</li>
-					<li class="audio">
-						<div class="audio__play"><i class="play"></i></div>
-						<div class="audio__name">
-							<span>Осень золотая</span>
-						</div>
-						<div class="audio__time">06:08</div>
-						<div class="audio__volume">
-							
-						</div>
-						<div class="audio__buy"><i></i></div>
-						<div class="audio__share">
-							<a href="#">Поделиться</a>
-						</div>
-						<div class="audio__delete">
-							<p class="delete"></p>
-						</div>
-					</li>
-					<li  class="audio">
-						<div class="audio__play"><i class="play"></i></div>
-						<div class="audio__name">
-							<span>Осень золотая</span>
-						</div>
-						<div class="audio__time">06:08</div>
-						<div class="audio__volume">
-							
-						</div>
-						<div class="audio__buy"><i></i></div>
-						<div class="audio__share">
-							
-						</div>
-						<div class="audio__delete">
-							<p class="delete"></p>
-						</div>
-					</li>
-					<li  class="audio">
-						<div class="audio__play"><i class="play"></i></div>
-						<div class="audio__name">
-							<span>Осень золотая</span>
-						</div>
-						<div class="audio__time">06:08</div>
-						<div class="audio__volume">
-							
-						</div>
-						<div class="audio__buy"></div>
-						<div class="audio__share">
-							
-						</div>
-						<div class="audio__delete">
-							<p class="delete"></p>
-						</div>
-					</li>
-					<li  class="audio">
-						<div class="audio__play"><i class="play"></i></div>
-						<div class="audio__name">
-							<span>Осень золотая</span>
-						</div>
-						<div class="audio__time">06:08</div>
-						<div class="audio__volume">
-							
-						</div>
-						<div class="audio__buy"></div>
-						<div class="audio__share">
-							
-						</div>
-						<div class="audio__delete">
-							<p class="delete"></p>
-						</div>
-					</li>
-				</ul>
+						<div class="account__edit">Pедактировать</div>
+					</div>
+					<div class="biography">
+						<span class="biography__add">Добавьте сюда свою биографию!</span>
+					</div>
+				</div>
+			</div>
+			<div class="spoiler js-spoiler">
+				<p class="spoiler__title">Подсказка</p>
+				<p class="spoiler__text js-spoiler-text">
+					Помните, что в данный момент Ваша страница скрыта для остальных пользователей.
+					Если Вы хотите сделать ее видимой для всех и таким образом получить возможность рассказать о себе, как о талантливом организаторе мероприятий, успешной концертной площадке или ивент-агентстве - Вам необходимо активировать данную услугу.
+				</p>
 			</div>
 		</div>
 	</div>
