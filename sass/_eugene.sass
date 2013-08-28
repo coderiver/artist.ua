@@ -39,7 +39,15 @@ p.podcast__added
 		bottom: -2px
 		left: 50%
 		margin-left: -12px
-		+s(triangle)		
+		+s(triangle)
+.podcast_mod.is-active
+	&:after
+		content: ""
+		position: absolute
+		bottom: -2px
+		left: 50%
+		margin-left: -12px
+		+s(triangle3)		
 .poscast__img
 	position: relative
 	margin-bottom: 8px
@@ -85,4 +93,21 @@ p.podcast__added
 	font-size: 14px
 	border-bottom: 1px solid #d7d7d7
 .podcast__descr_bot
-	border-bottom: none		
+	border-bottom: none
+.podcast__more
+	margin-bottom: 15px
+	padding: 0 15px
+	text-align: right
+	a
+		color: #aaa
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+.podcast__name
+	clear: both
+	margin: 0 -10px 0 -21px
+	padding: 0 22px
+	height: 50px
+	line-height: 50px
+	border-top: 1px solid #d7d7d7
+	font-size: 14px			
