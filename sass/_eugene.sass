@@ -1,0 +1,60 @@
+@import "base"
+.label
+	input,
+	textarea 
+		+trans(all .1s linear)
+		&:focus 
+			border-color: #bbb
+			
+.podcast-wrap 
+	+clr
+	margin-right: -15px
+.podcast 
+	float: left 
+	padding: 2px
+	margin-right: 12px
+	width: 171px
+	overflow: hidden
+	font-size: 14px
+	color: #3c3c3c 
+	p
+		margin-bottom: 15px
+		color: #3c3c3c
+.poscast__img
+	position: relative
+	margin-bottom: 8px
+	&:hover 
+		+border-radius(3px)
+		overflow: hidden
+		+box-shadow(0 0 0 2px #ffc700)
+		.set
+			display: block
+	a
+		display: block
+		height: 153px
+		line-height: 153px
+		overflow: hidden
+		text-align: center
+	img
+		display: block
+.podcast__title
+	display: block
+.set
+	position: absolute
+	display: none
+	top: 0
+	left: 0
+	right: 0
+	height: 26px
+	line-height: 26px
+	text-align: right
+	font-size: 0 
+	background: rgba(50,50,50,.79)    
+	.btn-edit,
+	.btn-delete
+		vertical-align: middle
+		margin-right: 11px
+.btn-edit
+	+s(edit)
+.btn-delete
+	+s(delete2)
