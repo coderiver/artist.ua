@@ -14,15 +14,24 @@
 	padding: 2px
 	margin-right: 12px
 	width: 171px
-	overflow: hidden
 	font-size: 14px
 	color: #3c3c3c 
 	p
 		margin-bottom: 15px
 		color: #3c3c3c
+.podcast.is-active
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		bottom: -2px
+		left: 50%
+		margin-left: -12px
+		+s(triangle)		
 .poscast__img
 	position: relative
 	margin-bottom: 8px
+	overflow: hidden
 	&:hover 
 		+border-radius(3px)
 		overflow: hidden
@@ -58,3 +67,8 @@
 	+s(edit)
 .btn-delete
 	+s(delete2)
+.podcast__descr
+	margin: 22px -22px
+	padding: 0 22px 22px
+	font-size: 14px
+	border-bottom: 1px solid #d7d7d7	
