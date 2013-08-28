@@ -262,6 +262,8 @@ a.meta__share:hover, a.meta__comm:hover, a.meta__go:hover { text-decoration: und
 
 .info.is-open .info__hint { display: block; }
 
+.spoiler-wrap { margin-top: 20px; }
+
 .spoiler { padding: 0 15px; background: #f2f2f2; cursor: pointer; }
 .spoiler .spoiler__title { position: relative; font-weight: bold; font-size: 14px; height: 40px; line-height: 40px; }
 .spoiler .spoiler__title:after { content: ""; position: absolute; top: 16px; right: 0; background: url('../img/icons-s6264f375af.png') 0 -2292px no-repeat; width: 8px; height: 7px; }
@@ -562,7 +564,7 @@ a.meta__share:hover, a.meta__comm:hover, a.meta__go:hover { text-decoration: und
 
 .content__search { float: right; height: 24px; width: 258px; margin-top: 12px; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 15px; border: 1px solid #bcc1c4; background: #f3f2f2; color: #aaaaaa; font-size: 13px; }
 
-.tab-item { position: relative; min-height: 359px; padding: 28px 22px; background: #f2f2f2; }
+.tab-item { position: relative; min-height: 359px; padding: 28px 22px 0; background: #f2f2f2; }
 .tab-item article { margin-bottom: 45px; }
 .tab-item p { color: #acacac; }
 
@@ -701,7 +703,7 @@ p.bg__text { float: left; color: black; }
 .label input, .label textarea { -moz-transition: all 0.1s linear; -o-transition: all 0.1s linear; -webkit-transition: all 0.1s linear; -ms-transition: all 0.1s linear; transition: all 0.1s linear; }
 .label input:focus, .label textarea:focus { border-color: #bbbbbb; }
 
-.podcast-wrap { margin-right: -15px; }
+.podcast-wrap { margin-right: -15px; margin-bottom: 22px; }
 .podcast-wrap:before, .podcast-wrap:after { content: ""; display: table; }
 .podcast-wrap:after { clear: both; }
 
@@ -732,7 +734,9 @@ p.podcast__added { margin-bottom: 10px; font-size: 14px; color: #3c3c3c; }
 
 .btn-delete { background: url('../img/icons-s6264f375af.png') 0 -2330px no-repeat; width: 11px; height: 11px; }
 
-.podcast__descr { margin: 22px -22px; padding: 0 22px 22px; font-size: 14px; border-bottom: 1px solid #d7d7d7; }
+.podcast__descr { margin: 22px -22px 0; padding: 0 22px 22px; font-size: 14px; border-bottom: 1px solid #d7d7d7; }
+
+.podcast__descr_bot { border-bottom: none; }
 
 @font-face { font-family: "HeliosCondLight"; src: url("../fonts/HeliosCondLight.eot"); src: url("../fonts/HeliosCondLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HeliosCondLight.woff") format("woff"), url("../fonts/HeliosCondLight.ttf") format("truetype"), url("../fonts/HeliosCondLight.svg#HeliosCondLight") format("svg"); font-weight: normal; font-style: normal; }
 
