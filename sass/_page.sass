@@ -182,8 +182,7 @@
 .favorite-list
 	display: table
 	width: 100%
-	border-collapse: collapse
-	margin-bottom: 45px 			
+	border-collapse: collapse 			
 .favorite
 	display: table-row
 	height: 67px
@@ -239,4 +238,31 @@
 	width: 40px
 	text-align: center
 	i
-		display: inline-block	
+		display: inline-block
+.order-done-wrap
+	padding: 0 15px
+	margin-top: 45px
+.order-done-list
+	+clr
+	margin: 21px 0 31px
+.order-done
+	float: left
+	width: 78px
+	margin-left: 17px
+	text-align: center
+	&:first-child
+		margin-left: 0
+.order-done__img
+	width: 78px
+	height: 78px
+	margin-bottom: 12px
+	+border-radius(50%)
+	overflow: hidden
+	background: #adadad
+.order-done__name
+	text-transform: uppercase
+	font-size: 12px
+	color: #2d2d2d
+.order-done__genre
+	font-size: 12px
+	color: #acacac		
