@@ -1,0 +1,430 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .top -->
+<div class="top">
+	<div class="top__in">
+		<div class="enter">
+			<a href="#">Вход</a>
+			<a href="#">Регистрация</a>
+		</div>
+		<div class="language">
+			<span>ru</span>
+			<a href="#">eng</a>
+		</div>
+		<div class="player">
+			<button class="player__prev"></button>
+			<button class="player__pause"></button>
+			<button class="player__next"></button>
+			<div class="player__song">
+				<div class="player__pic">
+					<img src="img/pic1.jpg" alt="">
+				</div>
+				<div class="player__info">
+					<span>03:45</span>
+					<strong>Checkpoint - Love love love love love</strong>
+					<i style="width: 20%"></i>
+				</div>
+			</div>
+			<button class="player__mute"></button>
+		</div>
+	</div>
+</div>
+<!-- END .top -->
+<!-- BEGIN .wrap -->
+<div class="wrap">
+	<!-- BEGIN .header -->
+	<header class="header">
+		<nav class="nav">
+			<a href="#">ГЛАВНАЯ</a>
+			<a href="#">О НАС</a>
+			<a href="#">новости</a>
+			<a href="#">FAQ</a>
+			<a href="#">контакты</a>
+		</nav>
+		<a class="logo" href="#">Artist.ua</a>
+		<div class="search-form">
+			<input type="text" placeholder="Поиск...">
+			<button></button>
+		</div>
+	</header>
+	<!-- END .header -->
+	<!-- BEGIN .inner-wrap -->
+	<div class="inner-wrap">
+		<aside class="aside">
+			<nav class="aside__nav">
+				<span class="aside__title">Моя страница</span>
+				<ul class="aside__menu">
+					<li><a href="#">Информация аккаунта</a></li>
+					<li><a href="#">Календарь</a></li>
+					<li class="is-active"><a href="#">Избранные артисты</a></li>
+					<li><a href="#">Фансообщества</a></li>
+				</ul>
+			</nav>
+			<nav class="aside__nav">
+				<span class="aside__title">Мой кабинет</span>
+				<ul class="aside__menu">
+					<li><a href="#">Профиль</a></li>
+					<li><a href="#">Мой плейлист</a></li>
+					<li><a href="#">Сотрудничество</a></li>
+				</ul>
+			</nav>
+			<nav class="aside__nav aside__nav_blocked">
+				<span class="aside__title">Мои сервисы</span>
+				<ul class="aside__menu">
+					<li><a href="#">Мои покупки</a></li>
+					<li><a href="#">Онлайн</a></li>
+					<li><a href="#">Краундфандинг</a></li>
+					<li><a href="#">Аукцион</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<div class="content">
+			<nav class="content__menu">
+				<ul>
+					<li><a href="#">Информация аккаунта</a></li>
+					<li class="is-active"><a href="#">Календарь</a></li>
+					<li><a href="#">Избранные артисты</a></li>
+					<li><a href="#">Фансообщества</a></li>
+				</ul>
+			</nav>
+			<nav class="content__tabs">
+				<ul>
+					<li>Таймлайн</li>
+					<li class="is-active">Афиша</li>
+				</ul>
+				<a href="#" class="afisha-link">Перейти к полной афише событий</a>
+			</nav>
+			<div class="calendar-wrap">
+				<div class="calendar-settings">
+					<div class="select-date">
+						<p>Сегодня 4 марта, понедельник</p>
+						<div class="select select_100">
+							<span></span>
+							<input type="hidden">
+							<ul class="select-list" style="display: none;">
+								<li data-id="25">март</li>
+								<li data-id="26">апрель</li>
+								<li data-id="27">май</li>
+								<li data-id="28">июнь</li>
+							</ul>
+						</div>
+						<div class="select select_year">
+							<span></span>
+							<input type="hidden">
+							<ul class="select-list" style="display: none;">
+								<li data-id="217">1990</li>
+								<li data-id="218">1991</li>
+								<li data-id="219">1992</li>
+								<li data-id="220">1993</li>
+							</ul>
+						</div>
+					</div>
+					<div class="switch-view">Смотреть списком</div>
+				</div>
+				<table class="calendar">
+					<tr class="week">
+						<td>
+							<div class="day day_inactive"></div>
+						</td>
+						<td>
+							<div class="day day_inactive"></div>
+						</td>
+						<td>
+							<div class="day day_inactive"></div>
+						</td>
+						<td>
+							<div class="day day_inactive"></div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">1</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">2</p>
+							</div>
+						</td>
+						<td>
+							<div class="day day_full">
+								<p class="day__number">3</p>
+								<div class="day__event">
+									Сегодня <strong>3</strong> события...
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="week">
+						<td>
+							<div class="day">
+								<p class="day__number">4</p>
+							</div>
+						</td>
+						<td>
+							<div class="day day_full">
+								<p class="day__number">5</p>
+								<div class="day__event">
+									Сегодня <strong>1</strong> события...
+								</div>
+							</div>
+							<div class="day-details">
+								<div class="day-details__head">
+									<i class="day-details__close"></i>
+									<i class="corner"></i>
+									<div class="day-details__img"></div>
+									<div class="day-details__date">
+										<p>5 марта, вт</p>
+										<p>18-00</p>
+									</div>
+								</div>
+								<div class="event">
+									<a href="#" class="event__name">Группа NoName</a>
+									<p>Киев</p>
+									<p>Ночной клуб “Crystall Hall”</p>
+									<p class="event__title">Долгожданный юбилейный концерт</p>
+									<div class="event__options">
+										<i class="share"></i>
+										<span><i class="comm"></i>3</span>
+										<span><i class="users"></i>5</span>
+										<i class="delete"></i>
+									</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">6</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">7</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">8</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">9</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">10</p>
+							</div>
+						</td>
+					</tr>
+					<tr class="week">
+						<td>
+							<div class="day day_full">
+								<p class="day__number">11</p>
+								<div class="day__event">
+									Сегодня <strong>2</strong> события...
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">12</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">13</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">14</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">15</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">16</p>
+							</div>
+						</td>
+						<td>
+							<div class="day day_full">
+								<p class="day__number">17</p>
+								<div class="day__event">
+									Сегодня <strong>5</strong> события...
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr class="week">
+						<td>
+							<div class="day">
+								<p class="day__number">18</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">19</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">20</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">21</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">22</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">23</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">24</p>
+							</div>
+						</td>
+					</tr>
+					<tr class="week">
+						<td>
+							<div class="day day_full">
+								<p class="day__number">25</p>
+								<div class="day__event">
+									Концерт
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">26</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">27</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">28</p>
+							</div>
+						</td>
+						<td>
+							<div class="day">
+								<p class="day__number">29</p>
+							</div>
+						</td>
+						<td>
+							<div class="day day_full">
+								<p class="day__number">25</p>
+								<div class="day__event">
+									Автограф- сессия
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="day day_full">
+								<p class="day__number">31</p>
+								<div class="day__event">
+									Концерт
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="spoiler-wrap">
+				<div class="spoiler js-spoiler">
+					<p class="spoiler__title">Подсказка</p>
+					<p class="spoiler__text js-spoiler-text" style="display: none;">
+						Ваша Афиша - это Ваши мероприятия с “общим доступом”, а также все те события, которые Вы планируете посетить.
+						Для Вашего удобства мы будем напоминать Вам о предстоящем мероприятии, с помощью рассылки на указанный при регистрации e-mail. Если Вы не хотите получать такую рассылку ее можно отключить в разделе Профиль - Личные данные.
+						Смотрите нашу афишу событий и выбирайте интересные мероприятия! Для этого достаточно просто нажать       и мероприятие автоматически будет отображаться в данном разделе!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<p>Баннер с переходом на Фанзону (афишу событий)<br>для того, чтобы пользователь мог легко перейти в афишу событий и добавлять события себе в афишу.</p>
+		</div>
+	</div>
+	<!-- END .inner-wrap -->
+	<!-- BEGIN .footer -->
+	<footer class="footer">
+		<div class="footer__in">
+			<div class="footer__logo">
+				<a href="#"></a>
+			</div>
+			<div class="footer__info">
+				<div class="footer__detail">
+					<div class="footer__about">ARTIST.UA - это интернет-ресурс с самой большой базой звезд шоу-бизнеса. Наш сайт объединяет людей в комьюнити  разных профессий и направлений, у которых общее одно – творческое видение действительности, любовь к искусству и искренне желание дарить другим радость и ощущение праздника. Мы создали портал для Артистов, Фанатов, Организаторов, представителей СМИ и заведений, что бы каждый нашел возможность создать, узнать или просто поучаствовать в культурной и разнообразной жизни нашей страны.  HAVE FUN WITH US! Присоединяйтесь!</div>
+					<div class="footer__contacts">
+						<a class="footer__skype" href="callto:artistua">artistua<i></i></a>
+						<a class="footer__mail" href="mailto:support@artist.ua">support@artist.ua<i></i></a>
+						<span class="footer__phone">+38 (044) 587 75 79<i></i></span>
+					</div>
+				</div>
+				<div class="footer__links">
+					<nav class="footer__nav">
+						<ul>
+							<li><a href="#">ГЛАВНАЯ</a></li>
+							<li><a href="#">О НАС</a></li>
+							<li><a href="#">новости</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">КОНТАКТЫ</a></li>
+							<li><a href="#">СОГЛАШЕНИЕ</a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</nav>
+					<nav class="footer__menu">
+						<ul>
+							<li><a href="#">БУКИНГ</a></li>
+							<li><a href="#">МУЗЫКА</a></li>
+							<li><a href="#">СЕРВИСЫ</a></li>
+							<li><a href="#">ФАНЗОНА</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="footer__social">
+			<div class="footer__fb">
+				<img src="img/fb.png" alt="">
+			</div>
+			<div class="footer__vk">
+				<img src="img/vk.png" alt="">
+			</div>
+		</div>			
+	</footer>
+	<!-- END .footer -->
+</div>
+<!-- END .wrap -->
+<!-- BEGIN .copyright -->
+<div class="copyright">© 2009-2012. Artist.ua, все права защищены. Использование материалов разрешено только с предварительного разрешения правообладателей.</div>
+<!-- END .copyright -->
+</body>
+</html>

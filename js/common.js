@@ -57,5 +57,14 @@ $(".info i").click(function(){
 	$(this).parent().toggleClass('is-open');
 });
 
+//day-details show/hide
+$(".day_full").click(function(){
+	$(this).parent().find('.day-details').show();
+});
+$(".day-details__close").click(function(){
+	$(this).parent().parent().hide();
+});
+
+
 
 });
