@@ -888,7 +888,8 @@ p.podcast__added { margin-bottom: 10px; font-size: 14px; color: #3c3c3c; }
 .switch-view:hover { text-decoration: none; }
 
 .calendar { width: 100%; border-collapse: collapse; margin-top: 5px; }
-.calendar td { position: relative; width: 105px; height: 97px; }
+.calendar td { width: 105px; height: 97px; }
+.calendar .td { position: relative; }
 
 .day { width: 95px; height: 87px; overflow: hidden; margin: 10px 10px 0 0; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10px; border: 1px solid #e0dddb; background: #f1f1f1; cursor: pointer; }
 
@@ -901,7 +902,7 @@ p.podcast__added { margin-bottom: 10px; font-size: 14px; color: #3c3c3c; }
 
 .day__event { color: #3c3c3c; }
 
-.day-details { display: none; position: absolute; top: 10px; left: 0; width: 200px; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; border: 1px solid #b1b1b1; background: white; z-index: 1; }
+.day-details { display: none; position: absolute; top: 0px; left: 0; width: 200px; -moz-box-sizing: border-box; box-sizing: border-box; padding: 10px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; border: 1px solid #b1b1b1; background: white; z-index: 1; }
 
 .day-details__head { position: relative; margin-bottom: 5px; }
 .day-details__head:before, .day-details__head:after { content: ""; display: table; }
